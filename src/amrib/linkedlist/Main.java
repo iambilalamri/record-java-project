@@ -1,4 +1,4 @@
-package amrib.structure.linkedlist;
+package amrib.linkedlist;
 
 public class Main {
 

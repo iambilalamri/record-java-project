@@ -1,4 +1,4 @@
-package amrib.object.recorded;
+package amrib.recorded;
 
 public class Main {
 

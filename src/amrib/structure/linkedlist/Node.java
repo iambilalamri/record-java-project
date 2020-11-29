@@ -1,2 +1,0 @@
-package amrib.structure.linkedlist;
-

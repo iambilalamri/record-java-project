@@ -1,3 +1,3 @@
-package amrib.object.recorded;
+package amrib.recorded;
 
 // public record Person(String name, int age, String dateBirth) {}
