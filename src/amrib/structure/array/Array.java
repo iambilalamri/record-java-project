@@ -1,4 +1,4 @@
-package amrib.structure;
+package amrib.structure.array;
 
 public class Array {
 
@@ -24,7 +24,6 @@ public class Array {
 		}
 		// add the new element at end
 		items[count++] = item;
-
 	}
 
 	public void print() {
@@ -93,5 +92,36 @@ public class Array {
 			}
 		}
 		return commonItem;
+	}
+
+	public void insertAt(int item, int index) {
+		if (index < 0 || index > count)
+			throw new IllegalArgumentException();
+
+		if (items.length == count) {
+			// create new array with double length
+			int[] newItems = new int[count * 2];
+			// copy the value of item in new created array
+			for (int j = 0; j < count; j++) {
+				newItems[j] = items[j];
+			}
+			// set new array to items
+			items = newItems;
+		}
+		for (int i = count; i >= index; i--) {
+			items[i + 1] = items[i];
+		}
+		items[index] = item;
+		count++;
+	}
+
+	public int[] reverse() {
+		int[] reverse = new int[count];
+		int j = count;
+		for (int i = 0; i < count; i++) {
+			reverse[j - 1] = items[i];
+			j = j - 1;
+		}
+		return items;
 	}
 }

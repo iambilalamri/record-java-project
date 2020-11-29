@@ -1,4 +1,4 @@
-package amrib.structure;
+package amrib.structure.array;
 
 public class Main {
 
@@ -7,7 +7,6 @@ public class Main {
 		test[0] = 10;
 		test[1] = 56;
 		test[2] = 15;
-		test[3] = 65;
 		Array numbers = new Array(4);
 		numbers.insert(10);
 		numbers.insert(20);
@@ -18,7 +17,10 @@ public class Main {
 		// System.out.println(numbers.indexOf(40));
 		// System.out.println("Max: " + numbers.max());
 		// numbers.print();
-		numbers.intersect(test).print();
+		// numbers.intersect(test).print();
+		// numbers.insertAt(5, 0);
+		// numbers.print();
+		System.out.println(numbers.reverse());
 	}
 
 }
