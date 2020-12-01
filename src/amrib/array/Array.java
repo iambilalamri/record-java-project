@@ -1,4 +1,4 @@
-package amrib.structure.array;
+package amrib.array;
 
 public class Array {
 
