@@ -80,7 +80,7 @@ public class Main {
         double tip = meal_cost * tip_percent/100;
         double tax = tax_percent * tip_percent/100;
         
-        System.out.println(meal_cost+tax+tip);
+        System.out.println(Math.round(meal_cost+tax+tip));
         
     }
 
