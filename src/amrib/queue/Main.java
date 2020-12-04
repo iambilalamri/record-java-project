@@ -12,7 +12,7 @@ public class Main {
 		queue.add(10);
 		queue.add(20);
 		queue.add(30);
-
+		reverse(queue);
 		System.out.println(queue);
 	}
 
