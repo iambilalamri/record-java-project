@@ -1,9 +1,6 @@
 package bamri.hackerrank;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
@@ -11,6 +8,12 @@ public class HackerRankSolution {
 
 	public static void main(String[] args) {
 		int[] numbers = new int[] { -1, 3, 7, 4, 8 };
+		int[] result1 = reverseArray(numbers);
+		for (int elem : result1) {
+			System.out.print(elem);
+		}
+		System.out.println();
+		System.out.println("*********************");
 		int target = 7;
 		int[] result = getTwoSum(numbers, target);
 		System.out.println(result[0] + " " + result[1]);
@@ -27,7 +30,7 @@ public class HackerRankSolution {
 		int arr[][] = { { 1, 3, 4 }, { 2, 4, 3 }, { 3, 4, 5 } };
 		System.out.println("Columns: " + arr[0].length);
 		System.out.println("Rows: " + arr.length);
-		getDialgonale(arr);
+		getDiagonale(arr);
 	}
 
 	public static int[] getTwoSum(int[] numbers, int target) {
@@ -61,7 +64,7 @@ public class HackerRankSolution {
 		System.out.println(reversed);
 	}
 
-	public static void getDialgonale(int[][] matrix) {
+	public static void getDiagonale(int[][] matrix) {
 		int left_to_right = 0;
 		int right_to_left = 0;
 
@@ -82,6 +85,21 @@ public class HackerRankSolution {
 			l--;
 		}
 		System.out.println(Math.abs(left_to_right - right_to_left));
+	}
+
+	static int[] reverseArray(int[] arr) {
+		int len = arr.length - 1;
+		for (int i = 0; i <= len / 2; i++) {
+			swap(arr, i, len - i);
+		}
+		return arr;
+
+	}
+
+	public static void swap(int[] arr, int start, int end) {
+		int temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
 	}
 
 }
