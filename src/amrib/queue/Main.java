@@ -14,6 +14,11 @@ public class Main {
 		queue.add(30);
 		reverse(queue);
 		System.out.println(queue);
+		System.out.println("*********************");
+		ArrayQueue queue1 = new ArrayQueue(3);
+		queue1.enqueue(20);
+		queue1.enqueue(30);
+		queue1.enqueue(40);
 	}
 
 	public static void reverse(Queue<Integer> queue) {

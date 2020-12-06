@@ -17,7 +17,7 @@ public class ArrayQueue {
 	public void enqueue(int item) {
 		if (isFull())
 			throw new IllegalStateException();
-
+		System.out.println("rear: " + rear);
 		items[rear] = item;
 		rear = (rear + 1) % items.length;
 		count++;
