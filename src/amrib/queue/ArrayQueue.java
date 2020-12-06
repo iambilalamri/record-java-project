@@ -3,53 +3,55 @@ package amrib.queue;
 import java.util.Arrays;
 
 public class ArrayQueue {
-  private int[] items;
-  private int rear;
-  private int front;
-  private int count;
+	private int[] items;
+	private int rear;
+	private int front;
+	private int count;
 
-  public ArrayQueue(int capacity) {
-    items = new int[capacity];
-  }
+	// Queue is FIFO (First in First Out)
 
-  public void enqueue(int item) {
-    if (isFull())
-      throw new IllegalStateException();
+	public ArrayQueue(int capacity) {
+		items = new int[capacity];
+	}
 
-    items[rear] = item;
-    rear = (rear + 1) % items.length;
-    count++;
-  }
+	public void enqueue(int item) {
+		if (isFull())
+			throw new IllegalStateException();
 
-  public int dequeue() {
-    if (isEmpty())
-      throw new IllegalStateException();
+		items[rear] = item;
+		rear = (rear + 1) % items.length;
+		count++;
+	}
 
-    var item = items[front];
-    items[front] = 0;
-    front = (front + 1) % items.length;
-    count--;
+	public int dequeue() {
+		if (isEmpty())
+			throw new IllegalStateException();
 
-    return item;
-  }
+		var item = items[front];
+		items[front] = 0;
+		front = (front + 1) % items.length;
+		count--;
 
-  public int peek() {
-    if (isEmpty())
-      throw new IllegalStateException();
+		return item;
+	}
 
-    return items[front];
-  }
+	public int peek() {
+		if (isEmpty())
+			throw new IllegalStateException();
 
-  public boolean isEmpty() {
-    return count == 0;
-  }
+		return items[front];
+	}
 
-  public boolean isFull() {
-    return count == items.length;
-  }
+	public boolean isEmpty() {
+		return count == 0;
+	}
 
-  @Override
-  public String toString() {
-    return Arrays.toString(items);
-  }
+	public boolean isFull() {
+		return count == items.length;
+	}
+
+	@Override
+	public String toString() {
+		return Arrays.toString(items);
+	}
 }
