@@ -1,6 +1,7 @@
 package amrib.queue;
 
 import java.util.ArrayDeque;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -15,10 +16,20 @@ public class Main {
 		reverse(queue);
 		System.out.println(queue);
 		System.out.println("*********************");
-		ArrayQueue queue1 = new ArrayQueue(3);
-		queue1.enqueue(20);
-		queue1.enqueue(30);
-		queue1.enqueue(40);
+		// ArrayQueue queue1 = new ArrayQueue(3);
+		// queue1.enqueue(20);
+		// queue1.enqueue(30);
+		// queue1.enqueue(40);
+
+		System.out.println("***********************");
+		PriorityQueue<Integer> priority = new PriorityQueue<Integer>();
+		priority.add(1);
+		priority.add(5);
+		priority.add(3);
+		priority.add(2);
+		while (!queue.isEmpty()) {
+			System.out.println(queue.remove());
+		}
 	}
 
 	public static void reverse(Queue<Integer> queue) {
