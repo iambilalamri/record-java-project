@@ -1,5 +1,6 @@
 package bamri.hackerrank;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -7,16 +8,12 @@ import java.util.Stack;
 public class HackerRankSolution {
 
 	public static void main(String[] args) {
-		int[] numbers = new int[] { -1, 3, 7, 4, 8 };
-		int[] result1 = reverseArray(numbers);
+		int[] numbers1 = new int[] { -2, 9, 5, 6, 4 };
+		int[] result1 = reverseArray(numbers1);
 		for (int elem : result1) {
 			System.out.print(elem);
 		}
 		System.out.println();
-		System.out.println("*********************");
-		int target = 7;
-		int[] result = getTwoSum(numbers, target);
-		System.out.println(result[0] + " " + result[1]);
 
 		// **********************************************
 
@@ -31,6 +28,49 @@ public class HackerRankSolution {
 		System.out.println("Columns: " + arr[0].length);
 		System.out.println("Rows: " + arr.length);
 		getDiagonale(arr);
+
+		// ************************************************
+		int[] numbers = new int[] { -1, 3, 7, 4, 8 };
+		int[] testing = new int[] { 1, 3, 5, 7, 9 };
+		System.out.println("*********************");
+		int target = 7;
+		int[] result = getTwoSum(numbers, target);
+		System.out.println(result[0] + " " + result[1]);
+		System.out.println("**********************");
+		minMaxSumSoution1(numbers);
+		minMaxSumSoution2(testing);
+	}
+
+	public static void minMaxSumSoution1(int[] arr) {
+		int min = 0, max = 0;
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+		for (int i = 0; i < arr.length - 1; i++) {
+			min += arr[i];
+		}
+		for (int i = arr.length - 1; i > 0; i--) {
+			max += arr[i];
+		}
+
+		System.out.println("Max: " + max);
+		System.out.println("Min: " + min);
+	}
+
+	public static void minMaxSumSoution2(int[] arr) {
+		long min = 0, max = 0, sum = 0;
+		min = arr[0];
+		max = min;
+		sum = min;
+		for (int i = 1; i < arr.length; i++) {
+			sum += arr[i];
+			if (arr[i] < min) {
+				min = arr[i];
+			}
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		System.out.println((sum - max) + " " + (sum - min));
 	}
 
 	public static int[] getTwoSum(int[] numbers, int target) {
