@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class HackerRankSolution {
+public class Solution1 {
 
 	public static void main(String[] args) {
 		int[] numbers1 = new int[] { -2, 9, 5, 6, 4 };
