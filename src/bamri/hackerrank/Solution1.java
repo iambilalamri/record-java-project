@@ -73,6 +73,35 @@ public class Solution1 {
 		System.out.println((sum - max) + " " + (sum - min));
 	}
 
+	public static void findPair(int[] A, int sum) {
+		// sort the array in ascending order
+		Arrays.sort(A);
+
+		// maintain two indices pointing to end-points of the array
+		int low = 0;
+		int high = A.length - 1;
+
+		// reduce search space arr[low..high] at each iteration of the loop
+
+		// loop till low is less than high
+		while (low < high) {
+			// sum found
+			if (A[low] + A[high] == sum) {
+				System.out.println("Pair found");
+				return;
+			}
+
+			// increment low index if total is less than the desired sum
+			// decrement high index is total is more than the sum
+			if (A[low] + A[high] < sum) {
+				low++;
+			} else {
+				high--;
+			}
+		}
+		System.out.println("Pair not found");
+	}
+
 	public static int[] getTwoSum(int[] numbers, int target) {
 		Map<Integer, Integer> visitedNumbers = new HashMap<Integer, Integer>();
 		for (int i = 0; i < numbers.length; i++) {
@@ -141,5 +170,6 @@ public class Solution1 {
 		arr[start] = arr[end];
 		arr[end] = temp;
 	}
+	
 
 }
