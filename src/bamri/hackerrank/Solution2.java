@@ -33,12 +33,24 @@ public class Solution2 {
 		zeroToEnd(tab4);
 		System.out.println();
 		System.out.println("******************");
-		int[] testArray = { 3, 9, 50, 15, 99, 7, 98, 65 };
+		int[] testArray = { 3, 9, 50, 15, 99, 7, 96, 65, 11, 12, 20, 19, 100, 108 };
 		// int result = distClosestNumbers(testArray);
 		closedNumbers(testArray);
 	}
 
 	public static void closedNumbers(int[] arr) {
+		int min = arr[arr.length - 1], val = 0;
+		int first = 0, second = 0;
+		Arrays.sort(arr);
+		for (int i = arr.length - 1; i > 0; i--) {
+			val = arr[i] - arr[i - 1];
+			if (min > val) {
+				min = val;
+				first = arr[i];
+				second = arr[i - 1];
+			}
+		}
+		System.out.println(first + "," + second);
 	}
 
 	public static void zeroToEnd(int[] arr) {
