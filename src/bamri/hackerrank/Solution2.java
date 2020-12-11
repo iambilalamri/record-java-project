@@ -33,7 +33,7 @@ public class Solution2 {
 		zeroToEnd(tab4);
 		System.out.println();
 		System.out.println("******************");
-		int[] testArray = { 3, 9, 50, 15, 99, 7, 96, 65, 11, 12, 20, 19, 100, 108 };
+		int[] testArray = { 3, 9, 50, 15, 99, 7, 96, 65, 11, 20, 19 };
 		// int result = distClosestNumbers(testArray);
 		closedNumbers(testArray);
 	}
