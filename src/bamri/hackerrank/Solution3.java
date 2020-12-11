@@ -7,6 +7,7 @@ public class Solution3 {
 		// longestIncreaseArray(array1);
 		System.out.println("FIB: " + fibonacci(9));
 		System.out.println("FACT:" + factorial(3));
+		// System.out.println(foo(1));
 	}
 
 	public static void longestIncreaseArray(int[] arr) {
@@ -26,4 +27,5 @@ public class Solution3 {
 			return 1;
 		return k * factorial(k - 1);
 	}
+
 }

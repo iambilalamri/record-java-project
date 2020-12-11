@@ -37,3 +37,24 @@ Une table de hachage est, en informatique, une structure de données qui permet u
 
 ## Circular Arrays
 Un tableau est appelé circulaire (Circular array) si nous considérons le premier élément comme le suivant du dernier élément. Les tableaux circulaires sont utilisés pour implémenter la file d'attente.
+
+## Functional Programming
+Le principe général de la programmation fonctionnelle est
+de concevoir des programmes comme des fonctions
+mathématiques que l'on compose entre elles. A la différence
+des programmes impératifs organisés en instructions
+produisent des effets de bords, les programmes fonctionnels
+sont bâtis sur des expressions dont la valeur est le résultat du
+programme. En particulier dans un langage fonctionnel, il
+n'existe pas d'effet de bord.<br/>
+Un programme fonctionnel consiste en une expression E
+(représentant l'algorithme et les entrées). Cette expression E
+est sujette à des règles de réécriture : la réduction consiste
+en un remplacement d'une partie de programme fonctionnel
+par une autre partie de programme selon une règle de
+réécriture bien définie. Ce processus de réduction sera répété
+jusqu'a l'obtention d'une expression irréductible (aucune
+partie ne peut être réécrite). L'expression E* ainsi obtenue
+est appelée forme normale (fn) de E et constitue la sortie du
+programme.<br/>
+Exemple : SQR 3+2
