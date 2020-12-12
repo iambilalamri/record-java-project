@@ -58,3 +58,31 @@ partie ne peut être réécrite). L'expression E* ainsi obtenue
 est appelée forme normale (fn) de E et constitue la sortie du
 programme.<br/>
 Exemple : SQR 3+2
+
+## Procedural Programming
+Une procédure, aussi appelée routine, sous-routine ou fonction (à ne pas confondre avec les fonctions de la programmation fonctionnelle reposant sur des fonctions mathématiques), contient simplement une série d'étapes à réaliser. N'importe quelle procédure peut être appelée à n'importe quelle étape de l'exécution du programme, y compris à l'intérieur d'autres procédures, voire dans la procédure elle-même (récursivité).<br/><br/>
+
+La programmation procédurale est un meilleur choix qu'une simple programmation séquentielle. Les avantages sont en effet les suivants 
+
+1. La possibilité de réutiliser le même code à différents emplacements dans le programme sans avoir à le retaper (factorisation), ce qui a pour effet la réduction de la taille du code source et un gain en localité des modifications, donc une amélioration de la maintenabilité (compréhension plus rapide, réduction du risque de régression);
+2. Une façon plus simple de suivre l'exécution du programme : la programmation procédurale permet de se passer d'instructions telles que goto, évitant ainsi bien souvent de se retrouver avec un programme compliqué qui part dans toutes les directions (appelé souvent « programmation spaghetti») ; cependant, la programmation procédurale permet les « effets de bord », c'est-à-dire la possibilité pour une procédure qui prend des arguments de modifier des variables extérieures à la procédure auxquelles elle a accès (variables de contexte plus global que la procédure).
+
+## Diff PP 
+un langage fonctionnel (idéalement) vous permet d'écrire une fonction mathématique, c.-à-d. une fonction qui prend n arguments et renvoie une valeur. Si le programme est exécuté, cette fonction est logiquement évaluée comme nécessaire. 1
+
+un langage procédural, d'autre part, exécute une série de séquentielle pas. (Il y a une façon de transformer la logique séquentielle en logique fonctionnelle appelée continuation passing style .)
+
+par conséquent, un programme purement fonctionnel donne toujours la même valeur pour une entrée, et l'ordre d'évaluation n'est pas bien défini; ce qui signifie que les valeurs incertaines comme les entrées de l'utilisateur ou les valeurs aléatoires sont difficiles à modéliser dans des langages purement fonctionnels.
+## Reactif programming
+La programmation réactive est un paradigme de programmation visant à conserver une cohérence d'ensemble en propageant les modifications d'une source réactive (modification d'une variable, entrée utilisateur, etc.) aux éléments dépendants de cette source.
+<br/>
+Une approche visant à mieux gérer les flux<br/>
+Idée : dépasser les callbacks ou le patron Observer.
+1. Gestion d’évènements et de l’asynchrone
+2. Faible latence (contraintes sur les temps de réponse)
+3. Flux de données importants (et rapides).
+4. Tolérance aux fautes
+
+
+## POO
+La programmation orientée objet est un modèle de langage de programmation qui s'articule autour d'objets et de données, plutôt que d'actions et de logique. Par le passé, un programme était une procédure logique qui récupérait des données en entrée, les traitait puis produisait des données en sortie.
