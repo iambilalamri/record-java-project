@@ -1,6 +1,5 @@
 package bamri.hackerrank;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Solution3 {
@@ -16,6 +15,23 @@ public class Solution3 {
 		maxiInKv(array2, 4);
 	}
 
+	// A voir
+	public static void optimium(int[] arr) {
+		int leftSum = 0;
+		int rightSum = 0;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = i; j < arr.length; j++) {
+				leftSum += arr[j];
+			}
+			for (int k = arr.length - 1; k > i; k++) {
+				rightSum += arr[k];
+			}
+		}
+		if (Math.abs(rightSum) == Math.abs(leftSum))
+			System.out.println(true);
+		System.out.println(false);
+	}
+
 	public static void maxiInKv(int[] arr, int k) {
 		int max;
 		int n = arr.length;
@@ -29,10 +45,9 @@ public class Solution3 {
 		}
 	}
 
-
-	public static void longestIncreaseArray(int[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-
+	public static void longestIncreaseArray(List<Integer> list) {
+		for (int i = 0; i < list.size(); i++) {
+			
 		}
 	}
 
