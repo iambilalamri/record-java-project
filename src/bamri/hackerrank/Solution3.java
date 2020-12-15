@@ -13,6 +13,7 @@ public class Solution3 {
 		// System.out.println(foo(1));
 		System.out.println();
 		maxiInKv(array2, 4);
+		System.out.println("*****************");
 	}
 
 	// A voir

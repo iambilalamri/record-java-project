@@ -24,19 +24,25 @@ public class Main {
 		for (int i = 0; i < b.length; i++)
 			System.out.print(b[i] + " ");
 		System.out.println();
-	// ****************************
-	int[] test = new int[4];
-	test[0]=10;test[1]=56;test[2]=15;
-	Array numbers = new Array(4);numbers.insert(10);numbers.insert(20);numbers.insert(30);numbers.insert(65);
-	// numbers.removeFromStart();
-	// numbers.removeAt(1);
-	// System.out.println(numbers.indexOf(40));
-	// System.out.println("Max: " + numbers.max());
-	// numbers.print();
-	// numbers.intersect(test).print();
-	// numbers.insertAt(5, 0);
-	// numbers.print();
-	System.out.println(numbers.reverse());
-}
+		// ****************************
+		int[] test = new int[4];
+		test[0] = 10;
+		test[1] = 56;
+		test[2] = 15;
+		Array numbers = new Array(4);
+		numbers.insert(10);
+		numbers.insert(20);
+		numbers.insert(30);
+		numbers.insert(65);
+		// numbers.removeFromStart();
+		// numbers.removeAt(1);
+		// System.out.println(numbers.indexOf(40));
+		// System.out.println("Max: " + numbers.max());
+		// numbers.print();
+		// numbers.intersect(test).print();
+		// numbers.insertAt(5, 0);
+		// numbers.print();
+		System.out.println(numbers.reverse());
+	}
 
 }
