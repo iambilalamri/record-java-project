@@ -231,3 +231,30 @@ add any values. You should use interfaces in situations where you want
 to decouple a class from its dependencies so you can swap these
 dependencies. This allows building applications that are extensible and
 testable.
+
+## Garbage Collector 
+Le ramasse-miettes est une fonctionnalité de la JVM qui a pour rôle de gérer la mémoire notamment en libérant celle des objets qui ne sont plus utilisés.
+
+## Serialization
+La sérialisation est un procédé qui permet de rendre un objet ou un graphe d'objets de la JVM persistant pour stockage ou échange et vice versa
+
+## AutoBoxing
+la conversion d'une valeur primitive en un objet de la classe wrapper correspondante est appelée autoboxing
+
+## Unboxing (Inversement)
+
+## Abstract Class
+Une classe abstraite est une classe déclarée abstract- elle peut ou non inclure des méthodes abstraites. Les classes abstraites ne peuvent pas être instanciées, mais elles peuvent être sous-classées
+
+## Some Java frameworks
+1. JSF (Java Server Faces), a Java web framework that makes easier the construction of user interfaces for server-based applications
+2. GWT (Google Web Toolkit), an open-source set of tools that helps programmers to create and maintain JavaScript applications in Java Spring, a Java framework which doesn’t impose any specific programming model
+3. Struts
+4. Hibernate
+5. Grails
+6. Play!
+7. Vaadin
+8. Maven
+
+## Java Machine Virtuel
+La JVM est une machine virtuelle qui permet à l'ordinateur d'exécuter des programmes Java qui ont été compilés en bytecode

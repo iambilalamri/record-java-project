@@ -36,6 +36,17 @@ public class Solution2 {
 		int[] testArray = { 3, 9, 50, 15, 99, 7, 96, 65, 11, 20, 19 };
 		// int result = distClosestNumbers(testArray);
 		closedNumbers(testArray);
+		int[] ints = {-9, 14, 37, 102};
+		System.out.println(exists(ints, 102)); // true
+		System.out.println(exists(ints, 36)); // false
+	}
+
+	public static boolean exists(int[] ints, int k) {
+		for (int i = 0; i < ints.length; i++) {
+			if (ints[i] == k)
+				return true;
+		}
+		return false;
 	}
 
 	public static void closedNumbers(int[] arr) {
