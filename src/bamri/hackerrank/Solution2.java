@@ -36,9 +36,21 @@ public class Solution2 {
 		int[] testArray = { 3, 9, 50, 15, 99, 7, 96, 65, 11, 20, 19 };
 		// int result = distClosestNumbers(testArray);
 		closedNumbers(testArray);
-		int[] ints = {-9, 14, 37, 102};
+		int[] ints = { -9, 14, 37, 102 };
 		System.out.println(exists(ints, 102)); // true
 		System.out.println(exists(ints, 36)); // false
+	}
+
+	public static boolean detectCapitalUse(String word) {
+		int numberOfCapital = 0;
+		for (int i = 0; i < word.length(); i++) {
+			if (Character.isUpperCase(word.charAt(i))) {
+				numberOfCapital++;
+			}
+		}
+		if (numberOfCapital == word.length() || numberOfCapital == 0)
+			return true;
+		return numberOfCapital == 1 && Character.isUpperCase(word.charAt(0));
 	}
 
 	public static boolean exists(int[] ints, int k) {

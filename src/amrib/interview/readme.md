@@ -258,3 +258,8 @@ Une classe abstraite est une classe déclarée abstract- elle peut ou non inclure 
 
 ## Java Machine Virtuel
 La JVM est une machine virtuelle qui permet à l'ordinateur d'exécuter des programmes Java qui ont été compilés en bytecode
+
+## Notes
+1. L'interface ne peut pas herité d'un classe.
+2. L'interface peut heriter d'un interface.
+3. Une classe ne peut pas heriter d'un interface.
