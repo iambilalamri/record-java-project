@@ -8,10 +8,12 @@ public class Main implements InterfaceB, InterfaceA {
 		System.out.println(c);
 		System.out.println("****************************");
 		int b = 5, d = 2, e = 3, f = 2;
-		int result = b++ + ++d - ++e + f++;
+		// int result1 = b++ + ++d - ++e + f++;
+		int result2 = b-- + --d - --e + f--;
 		System.out.println(b);
 		System.out.println(d);
-		System.out.println(result);
+		// System.out.println(result1);
+		System.out.println(result2);
 	}
 
 	@Override
