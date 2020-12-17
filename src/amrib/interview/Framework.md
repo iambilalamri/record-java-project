@@ -1,3 +1,5 @@
+-- See the [Java Framworks](https://en.wikipedia.org/wiki/List_of_Java_frameworks)
+
 ## Spark Framework
 Spark Framework is a micro framework and domain-specific language for the Java and Kotlin programming languages. Kotlin also runs on JVM, and it’s 100% interoperable with Java. With Spark, you can painlessly develop web applications, microservices, and REST APIs.
 
@@ -12,3 +14,10 @@ Tapestry is a component-based Java framework with which you can create scalable 
 
 ## Vaadin
 Vaadin provides you with a platform for streamlined Java development. It allows you to build web applications of customizable components that focus on performance, UX, and accessibility.
+
+## Grails
+Grails is an open source web application framework that uses the Apache Groovy programming language (which is in turn based on the Java platform). It is intended to be a high-productivity framework by following the "coding by convention" paradigm, providing a stand-alone development environment and hiding much of the configuration detail from the developer
+
+## Google Guava
+Set of common libraries, it facilitates best coding practices and helps reduce coding errors. It provides utility methods for collections, caching, primitives support, concurrency, common annotations, string processing, I/O, and validations.
+
